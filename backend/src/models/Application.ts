@@ -11,6 +11,11 @@ export interface IApplication extends Document {
     verified: boolean;
   }>;
   notes?: string;
+  appointment?: {
+    date: Date;
+    time: string;
+    notes?: string;
+  };
   createdAt: Date;
   updatedAt: Date;
 }
@@ -32,7 +37,12 @@ const ApplicationSchema: Schema = new Schema(
         verified: { type: Boolean, default: false }
       }
     ],
-    notes: { type: String }
+    notes: { type: String },
+    appointment: {
+      date: { type: Date },
+      time: { type: String },
+      notes: { type: String }
+    }
   },
   { timestamps: true }
 );

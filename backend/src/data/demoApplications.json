@@ -1,0 +1,64 @@
+[
+  {
+    "user": "507f1f77bcf86cd799439001",
+    "scheme": "507f1f77bcf86cd799439501",
+    "status": "Under Review",
+    "submittedAt": "2026-04-18T10:30:00Z",
+    "documents": [
+      {
+        "name": "Income Certificate",
+        "url": "https://example.com/documents/income-cert.pdf",
+        "verified": true
+      },
+      {
+        "name": "Aadhar Card",
+        "url": "https://example.com/documents/aadhar.pdf",
+        "verified": true
+      }
+    ],
+    "notes": "Application submitted for housing grant",
+    "appointment": {
+      "date": "2026-05-15T00:00:00Z",
+      "time": "14:00",
+      "notes": "Please bring original documents"
+    }
+  },
+  {
+    "user": "507f1f77bcf86cd799439002",
+    "scheme": "507f1f77bcf86cd799439502",
+    "status": "Approved",
+    "submittedAt": "2026-03-20T09:15:00Z",
+    "documents": [
+      {
+        "name": "Business Registration",
+        "url": "https://example.com/documents/registration.pdf",
+        "verified": true
+      },
+      {
+        "name": "Bank Statement",
+        "url": "https://example.com/documents/bank-statement.pdf",
+        "verified": true
+      }
+    ],
+    "notes": "All documents verified. Business relief approved.",
+    "appointment": {
+      "date": "2026-05-10T00:00:00Z",
+      "time": "10:30",
+      "notes": "Approval notification meeting"
+    }
+  },
+  {
+    "user": "507f1f77bcf86cd799439003",
+    "scheme": "507f1f77bcf86cd799439503",
+    "status": "Draft",
+    "documents": [
+      {
+        "name": "Age Proof",
+        "url": "https://example.com/documents/age-proof.pdf",
+        "verified": false
+      }
+    ],
+    "notes": "Pending income proof submission",
+    "appointment": null
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Government Scheme Officer",
+    "department": "Social Welfare",
+    "description": "Manage and implement various government welfare schemes, coordinate with beneficiaries, and ensure proper distribution of benefits.",
+    "qualifications": ["Bachelor Degree in Social Work", "Sociology", "Psychology", "2+ years experience"],
+    "minAge": 21,
+    "maxAge": 35,
+    "salary": {
+      "min": 450000,
+      "max": 750000
+    },
+    "deadline": "2026-07-15",
+    "active": true
+  },
+  {
+    "title": "Digital Services Coordinator",
+    "department": "IT & Digital Services",
+    "description": "Coordinate digital transformation initiatives, manage government portals, and ensure citizen services are accessible online.",
+    "qualifications": ["BE/B.Tech in CS/IT", "MCA", "3+ years in digital services", "Knowledge of government portals"],
+    "minAge": 22,
+    "maxAge": 40,
+    "salary": {
+      "min": 600000,
+      "max": 1000000
+    },
+    "deadline": "2026-06-30",
+    "active": true
+  },
+  {
+    "title": "Public Health Inspector",
+    "department": "Health Department",
+    "description": "Monitor public health standards, inspect healthcare facilities, and ensure compliance with health regulations.",
+    "qualifications": ["Bachelor in Public Health", "Nursing", "Medical Degree", "Health Inspector certification"],
+    "minAge": 21,
+    "maxAge": 45,
+    "salary": {
+      "min": 350000,
+      "max": 600000
+    },
+    "deadline": "2026-08-01",
+    "active": true
+  },
+  {
+    "title": "Urban Planning Assistant",
+    "department": "Municipal Corporation",
+    "description": "Assist in urban development planning, infrastructure projects, and municipal service coordination.",
+    "qualifications": ["Bachelor in Urban Planning", "Architecture", "Civil Engineering", "Planning certification"],
+    "minAge": 21,
+    "maxAge": 35,
+    "salary": {
+      "min": 400000,
+      "max": 700000
+    },
+    "deadline": "2026-07-20",
+    "active": true
+  },
+  {
+    "title": "Education Welfare Officer",
+    "department": "Education Department",
+    "description": "Oversee educational programs, coordinate with schools, and ensure implementation of education policies.",
+    "qualifications": ["Bachelor/Master in Education", "Teaching certification", "2+ years in education sector"],
+    "minAge": 22,
+    "maxAge": 40,
+    "salary": {
+      "min": 450000,
+      "max": 800000
+    },
+    "deadline": "2026-06-25",
+    "active": true
+  },
+  {
+    "title": "Tax Compliance Officer",
+    "department": "Revenue Department",
+    "description": "Ensure tax compliance, assist citizens with tax-related queries, and coordinate revenue collection activities.",
+    "qualifications": ["Bachelor in Commerce", "Finance", "CA/CS certification", "Tax knowledge"],
+    "minAge": 21,
+    "maxAge": 35,
+    "salary": {
+      "min": 500000,
+      "max": 850000
+    },
+    "deadline": "2026-07-10",
+    "active": true
+  },
+  {
+    "title": "Environmental Officer",
+    "department": "Environment Department",
+    "description": "Monitor environmental compliance, conduct inspections, and promote sustainable development initiatives.",
+    "qualifications": ["Bachelor in Environmental Science", "Ecology", "Environmental Engineering", "EIA certification"],
+    "minAge": 22,
+    "maxAge": 40,
+    "salary": {
+      "min": 400000,
+      "max": 700000
+    },
+    "deadline": "2026-08-15",
+    "active": true
+  },
+  {
+    "title": "Administrative Assistant",
+    "department": "General Administration",
+    "description": "Provide administrative support, manage documentation, and coordinate inter-departmental activities.",
+    "qualifications": ["Bachelor Degree", "Computer proficiency", "Communication skills"],
+    "minAge": 18,
+    "maxAge": 35,
+    "salary": {
+      "min": 300000,
+      "max": 550000
+    },
+    "deadline": "2026-06-20",
+    "active": true
+  }
+]
+

@@ -25,7 +25,9 @@ app.get('/', (req, res) => {
     endpoints: {
       health: `/api/${API_VERSION}/health`,
       schemes: `/api/${API_VERSION}/schemes`,
-      reminders: `/api/${API_VERSION}/reminders`
+      reminders: `/api/${API_VERSION}/reminders`,
+      applications: `/api/${API_VERSION}/applications`,
+      jobs: `/api/${API_VERSION}/jobs`
     }
   });
 });
