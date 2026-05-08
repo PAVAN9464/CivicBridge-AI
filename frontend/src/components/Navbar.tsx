@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 const navItems = [
   { label: 'Home', href: '#home' },
-  { label: 'Schemes', href: '#platform' },
-  { label: 'Eligibility Checker', href: '#eligibility' },
+  { label: 'Schemes', href: '#schemes' },
+  { label: 'Eligibility Criteria', href: '#eligibility' },
   { label: 'Dashboard', href: '#dashboard' },
   { label: 'Contact', href: '#contact' }
 ];
@@ -26,7 +26,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-200 transition hover:bg-white/10 md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-200 transition hover:bg-white/10"
           aria-label="Toggle navigation menu"
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}
@@ -44,17 +44,9 @@ export default function Navbar() {
             )}
           </svg>
         </button>
-
-        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
-          {navItems.map((item) => (
-            <a key={item.label} href={item.href} className="transition hover:text-white">
-              {item.label}
-            </a>
-          ))}
-        </nav>
       </div>
 
-      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden border-t border-white/10 bg-civic-navy/95 px-6 py-4`}> 
+      <div className={`${isOpen ? 'block' : 'hidden'} border-t border-white/10 bg-civic-navy/95 px-6 py-4`}> 
         <nav className="space-y-3 text-sm font-medium text-slate-300">
           {navItems.map((item) => (
             <a

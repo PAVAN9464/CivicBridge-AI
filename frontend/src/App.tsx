@@ -13,11 +13,11 @@ function App() {
       <main>
         <Hero />
 
-        <section id="platform" className="bg-slate-950/80 px-6 py-20 sm:px-8 lg:px-12">
+        <section id="schemes" className="bg-slate-950/80 px-6 py-20 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">Platform capabilities</p>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">Scheme highlights</p>
                 <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">A modern government-tech toolkit built for digital-first service delivery.</h2>
               </div>
               <p className="max-w-2xl text-sm leading-6 text-slate-400">From policy-aware workflows to resident-facing chat experiences, CivicBridge AI puts public service teams in control of secure, connected programs.</p>
@@ -62,15 +62,33 @@ function App() {
       </main>
 
       <footer id="contact" className="border-t border-white/10 bg-slate-950/90 px-6 py-12 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">CivicBridge AI</p>
-            <p className="mt-3 max-w-md text-sm leading-6 text-slate-400">Modern digital services for local and regional government teams. Build trust, reduce friction, and scale service access with AI-first solutions.</p>
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <a href="#platform" className="text-sm text-slate-300 transition hover:text-white">Platform</a>
-            <a href="#chatbot" className="text-sm text-slate-300 transition hover:text-white">Chatbot</a>
-            <a href="#eligibility" className="text-sm text-slate-300 transition hover:text-white">Eligibility</a>
+        <div className="mx-auto flex max-w-7xl flex-col gap-12">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">CivicBridge AI</p>
+              <p className="mt-3 max-w-md text-sm leading-6 text-slate-400">Modern digital services for local and regional government teams. Build trust, reduce friction, and scale service access with AI-first solutions.</p>
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">Quick Links</p>
+              <div className="mt-4 space-y-2">
+                <a href="#schemes" className="block text-sm text-slate-300 transition hover:text-white">Schemes</a>
+                <a href="#chatbot" className="block text-sm text-slate-300 transition hover:text-white">Chatbot</a>
+                <a href="#eligibility" className="block text-sm text-slate-300 transition hover:text-white">Eligibility</a>
+              </div>
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">Contact</p>
+              <div className="mt-4 space-y-3">
+                <div>
+                  <p className="text-xs text-slate-400">Email:</p>
+                  <a href="mailto:pavannp756@gmail.com" className="block text-sm font-medium text-civic-gold transition hover:text-white">pavannp756@gmail.com</a>
+                </div>
+                <div>
+                  <p className="text-xs text-slate-400">Phone:</p>
+                  <a href="tel:+918660055177" className="block text-sm font-medium text-civic-gold transition hover:text-white">+91-8660055177</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <p className="mt-10 text-center text-xs uppercase tracking-[0.32em] text-slate-600">© 2026 CivicBridge AI. Designed for secure public service delivery.</p>

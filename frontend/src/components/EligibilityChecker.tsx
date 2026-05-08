@@ -9,9 +9,9 @@ type EligibilityResult = {
   cards: { label: string; value: string; tone: 'success' | 'warning' | 'danger' }[];
 };
 
-const states = ['California', 'Texas', 'New York', 'Florida', 'Illinois'];
-const categories = ['General', 'Senior', 'Veteran', 'Disability'];
-const occupations = ['Public servant', 'Healthcare worker', 'Small business owner', 'Unemployed', 'Student'];
+const states = ['Maharashtra', 'Karnataka', 'Tamil Nadu', 'Delhi', 'Uttar Pradesh', 'West Bengal', 'Gujarat', 'Rajasthan', 'Kerala', 'Punjab'];
+const categories = ['General', 'OBC', 'SC/ST'];
+const occupations = ['Government employee', 'Healthcare worker', 'Small business owner', 'Unemployed', 'Student'];
 
 function assessEligibility(age: number, income: number, category: string, occupation: string): EligibilityResult {
   if (age < 18) {
@@ -27,13 +27,13 @@ function assessEligibility(age: number, income: number, category: string, occupa
     };
   }
 
-  const lowIncome = income <= 35000;
-  const mediumIncome = income <= 60000;
-  const highIncome = income > 60000;
-  const specialCategory = category === 'Senior' || category === 'Disability' || category === 'Veteran';
-  const frontline = occupation === 'Public servant' || occupation === 'Healthcare worker';
+  const lowIncome = income <= 300000;
+  const mediumIncome = income <= 600000;
+  const highIncome = income > 600000;
+  const specialCategory = category === 'OBC' || category === 'SC/ST';
+  const frontline = occupation === 'Government employee' || occupation === 'Healthcare worker';
 
-  if (specialCategory && age >= 55) {
+  if (specialCategory && age >= 50) {
     return {
       status: 'eligible',
       title: 'Eligible for priority support',
@@ -127,7 +127,7 @@ export default function EligibilityChecker() {
                   />
                 </label>
                 <label className="space-y-2 text-sm text-slate-300">
-                  Annual income ($)
+                  Annual income (₹)
                   <input
                     type="number"
                     min={0}
@@ -139,6 +139,15 @@ export default function EligibilityChecker() {
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
+                <label className="space-y-2 text-sm text-slate-300">
+                  Country
+                  <input
+                    type="text"
+                    value="India"
+                    readOnly
+                    className="w-full rounded-2xl border border-white/10 bg-slate-900/90 px-4 py-3 text-white outline-none"
+                  />
+                </label>
                 <label className="space-y-2 text-sm text-slate-300">
                   State
                   <select
