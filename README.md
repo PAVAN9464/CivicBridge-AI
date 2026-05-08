@@ -1,2 +1,0 @@
-# CivicBridge-AI
-GoogleXDeepstation Hackathon
