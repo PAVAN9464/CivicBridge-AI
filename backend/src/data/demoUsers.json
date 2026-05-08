@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": "demo-user-001",
+      "firstName": "Ramesh",
+      "lastName": "Patil",
+      "email": "ramesh.farmer@example.com",
+      "phone": "+919876543210",
+      "profile": {
+        "age": 45,
+        "income": 120000,
+        "state": "Maharashtra",
+        "category": "General",
+        "occupation": "Farmer"
+      },
+      "expectedEligibility": [
+        "PM Kisan Samman Nidhi (PM-KISAN)",
+        "Ayushman Bharat Yojana (PM-JAY)",
+        "Pradhan Mantri Awas Yojana (PMAY)"
+      ]
+    },
+    {
+      "id": "demo-user-002",
+      "firstName": "Priya",
+      "lastName": "Sharma",
+      "email": "priya.student@example.com",
+      "phone": "+919876543211",
+      "profile": {
+        "age": 20,
+        "income": 0,
+        "state": "Delhi",
+        "category": "General",
+        "occupation": "Student"
+      },
+      "expectedEligibility": [
+        "Sukanya Samriddhi Yojana (SSY)",
+        "Ayushman Bharat Yojana (PM-JAY)"
+      ]
+    },
+    {
+      "id": "demo-user-003",
+      "firstName": "Karthik",
+      "lastName": "Natarajan",
+      "email": "karthik.business@example.com",
+      "phone": "+919876543212",
+      "profile": {
+        "age": 35,
+        "income": 600000,
+        "state": "Tamil Nadu",
+        "category": "General",
+        "occupation": "Small business owner"
+      },
+      "expectedEligibility": [
+        "Pradhan Mantri Mudra Yojana (PMMY)",
+        "Pradhan Mantri Awas Yojana (PMAY)"
+      ]
+    },
+    {
+      "id": "demo-user-004",
+      "firstName": "Shanti",
+      "lastName": "Devi",
+      "email": "shanti.senior@example.com",
+      "phone": "+919876543213",
+      "profile": {
+        "age": 68,
+        "income": 50000,
+        "state": "Uttar Pradesh",
+        "category": "Senior",
+        "occupation": "Unemployed"
+      },
+      "expectedEligibility": [
+        "Ayushman Bharat Yojana (PM-JAY)",
+        "Pradhan Mantri Awas Yojana (PMAY)"
+      ]
+    },
+    {
+      "id": "demo-user-005",
+      "firstName": "Amit",
+      "lastName": "Kumar",
+      "email": "amit.pwd@example.com",
+      "phone": "+919876543214",
+      "profile": {
+        "age": 30,
+        "income": 150000,
+        "state": "Karnataka",
+        "category": "Disability",
+        "occupation": "Freelancer"
+      },
+      "expectedEligibility": [
+        "Pradhan Mantri Awas Yojana (PMAY)",
+        "Ayushman Bharat Yojana (PM-JAY)",
+        "Pradhan Mantri Mudra Yojana (PMMY)"
+      ]
+    }
+  ]
+}

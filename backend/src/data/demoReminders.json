@@ -1,0 +1,66 @@
+{
+  "reminders": [
+    {
+      "reminderId": "rem-001",
+      "userId": "demo-user-001",
+      "schemeId": "scheme-ind-004",
+      "schemeName": "PM Kisan Samman Nidhi (PM-KISAN)",
+      "applicationStatus": "Draft",
+      "deadline": "2026-12-31T23:59:59Z",
+      "priority": "High",
+      "notifications": {
+        "emailEnabled": true,
+        "smsEnabled": true,
+        "pushEnabled": false,
+        "lastSentAt": "2026-05-01T10:00:00Z",
+        "nextScheduledFor": "2026-06-01T10:00:00Z"
+      },
+      "actionItems": [
+        {
+          "taskId": "task-1",
+          "description": "Upload scanned copy of Aadhaar Card",
+          "isCompleted": true
+        },
+        {
+          "taskId": "task-2",
+          "description": "Verify bank account details",
+          "isCompleted": false
+        }
+      ],
+      "notes": "Need to visit local CSC to get land records verified.",
+      "createdAt": "2026-04-15T08:30:00Z",
+      "updatedAt": "2026-05-05T14:20:00Z"
+    },
+    {
+      "reminderId": "rem-002",
+      "userId": "demo-user-003",
+      "schemeId": "scheme-ind-003",
+      "schemeName": "Pradhan Mantri Mudra Yojana (PMMY)",
+      "applicationStatus": "Not Started",
+      "deadline": "2026-06-30T23:59:59Z",
+      "priority": "Critical",
+      "notifications": {
+        "emailEnabled": true,
+        "smsEnabled": false,
+        "pushEnabled": true,
+        "lastSentAt": null,
+        "nextScheduledFor": "2026-05-15T09:00:00Z"
+      },
+      "actionItems": [
+        {
+          "taskId": "task-1",
+          "description": "Draft business plan and financial projections",
+          "isCompleted": false
+        },
+        {
+          "taskId": "task-2",
+          "description": "Get 6-month bank statement",
+          "isCompleted": false
+        }
+      ],
+      "notes": "Deadline is approaching fast. Need to talk to CA.",
+      "createdAt": "2026-05-08T10:00:00Z",
+      "updatedAt": "2026-05-08T10:00:00Z"
+    }
+  ]
+}

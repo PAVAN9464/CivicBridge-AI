@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { ApiError } from '../middleware/errorHandler.js';
 import { filterSchemes, FilterCriteria } from '../services/schemeFilterService.js';
+import { generateSimplification } from '../services/ollamaService.js';
 
 interface EligibilityRequest {
   age: number;
@@ -32,36 +33,43 @@ export const checkEligibility = (request: Request, response: Response) => {
     throw new ApiError(400, 'Age and income must be non-negative', 'VALIDATION_ERROR');
   }
 
-  const isLowIncome = income <= 35000;
-  const isSenior = age >= 65;
-  const isSpecialCategory = category === 'Senior' || category === 'Disability' || category === 'Veteran';
+  const matchedSchemes = filterSchemes({ age, income, state, category, occupation });
 
-  const schemes: Array<{ name: string; match: number; status: 'eligible' | 'conditional' | 'ineligible' }> = [
-    {
-      name: 'Housing Support',
-      match: isLowIncome ? 95 : isSenior ? 85 : 60,
-      status: (isLowIncome || isSenior) ? 'eligible' : ('conditional' as const)
-    },
-    {
-      name: 'Small Business Relief',
-      match: occupation === 'Small business owner' ? 90 : 40,
-      status: occupation === 'Small business owner' ? ('eligible' as const) : ('ineligible' as const)
-    },
-    {
-      name: 'Healthcare Access Program',
-      match: isSpecialCategory ? 85 : 50,
-      status: isSpecialCategory ? ('eligible' as const) : ('conditional' as const)
+  const schemes = matchedSchemes.map((scheme) => {
+    let status: 'eligible' | 'conditional' | 'ineligible';
+    if (scheme.matchScore >= 80) {
+      status = 'eligible';
+    } else if (scheme.matchScore >= 50) {
+      status = 'conditional';
+    } else {
+      status = 'ineligible';
     }
-  ];
+
+    return {
+      name: scheme.name,
+      match: scheme.matchScore,
+      status
+    };
+  });
 
   const eligibleSchemes = schemes.filter((s) => s.status !== 'ineligible');
   const avgScore = eligibleSchemes.length > 0 ? Math.round(eligibleSchemes.reduce((sum, s) => sum + s.match, 0) / eligibleSchemes.length) : 0;
 
-  const recommendations = [];
-  if (isLowIncome) recommendations.push('You qualify for income-based support programs.');
-  if (isSenior) recommendations.push('Senior-specific benefits and services are available.');
-  if (isSpecialCategory) recommendations.push('Special category programs offer enhanced support.');
-  if (income > 0 && income < 25000) recommendations.push('Consider submitting documentation for expedited review.');
+  const recommendationsSet = new Set<string>();
+  const isLowIncome = income <= 35000;
+  const isSenior = age >= 65;
+  const isSpecialCategory = category === 'Senior' || category === 'Disability' || category === 'Veteran';
+
+  if (isLowIncome) recommendationsSet.add('You qualify for income-based support programs.');
+  if (isSenior) recommendationsSet.add('Senior-specific benefits and services are available.');
+  if (isSpecialCategory) recommendationsSet.add('Special category programs offer enhanced support.');
+  if (income > 0 && income < 25000) recommendationsSet.add('Consider submitting documentation for expedited review.');
+  
+  matchedSchemes.forEach(s => {
+    s.matchReasons.forEach(reason => recommendationsSet.add(reason));
+  });
+
+  const recommendations = Array.from(recommendationsSet);
 
   const result: EligibilityResult = {
     eligible: avgScore >= 60,
@@ -115,5 +123,20 @@ export const filterSchemesForUser = (request: Request, response: Response) => {
     schemes: matched,
     total: matched.length,
     message: matched.length > 0 ? `Found ${matched.length} matching schemes` : 'No schemes match your criteria. Try adjusting your filters.'
+  });
+};
+
+export const simplifySchemeDocument = async (request: Request, response: Response) => {
+  const { documentText } = request.body;
+
+  if (!documentText || typeof documentText !== 'string' || documentText.trim().length === 0) {
+    throw new ApiError(400, 'A valid documentText must be provided', 'VALIDATION_ERROR');
+  }
+
+  const simplifiedExplanation = await generateSimplification(documentText);
+
+  response.status(200).json({
+    originalLength: documentText.length,
+    simplifiedExplanation,
   });
 };
