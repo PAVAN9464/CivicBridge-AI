@@ -1,0 +1,230 @@
+{
+  "schemes": [
+    {
+      "id": "scheme-001",
+      "name": "City Housing Grant",
+      "description": "Financial assistance for housing support and rent for low-income residents.",
+      "category": "Housing",
+      "deadline": "2026-06-15",
+      "maxAmount": 15000,
+      "minIncome": 0,
+      "maxIncome": 60000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General", "Senior", "Disability"],
+      "applicableOccupations": ["*"],
+      "requirements": [
+        "Income verification",
+        "Proof of residency",
+        "Lease or rental agreement",
+        "Tax documents (last 2 years)"
+      ],
+      "matchCriteria": {
+        "lowIncomeBonus": 30,
+        "seniorBonus": 20,
+        "disabilityBonus": 25
+      }
+    },
+    {
+      "id": "scheme-002",
+      "name": "Small Business Relief",
+      "description": "Support package and financial relief for local small business owners.",
+      "category": "Business",
+      "deadline": "2026-07-01",
+      "maxAmount": 50000,
+      "minIncome": 20000,
+      "maxIncome": 150000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General"],
+      "applicableOccupations": ["Small business owner", "Entrepreneur"],
+      "requirements": [
+        "Business license",
+        "Tax documents (last 3 years)",
+        "Financial statements",
+        "Business plan"
+      ],
+      "matchCriteria": {
+        "occupationBonus": 40
+      }
+    },
+    {
+      "id": "scheme-003",
+      "name": "Senior Care Subsidy",
+      "description": "Healthcare and living assistance for seniors aged 65 and above.",
+      "category": "Healthcare",
+      "deadline": "2026-06-30",
+      "maxAmount": 25000,
+      "minIncome": 0,
+      "maxIncome": 75000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["Senior"],
+      "applicableOccupations": ["*"],
+      "requirements": [
+        "Age verification (65+)",
+        "Income proof",
+        "Medical documentation"
+      ],
+      "matchCriteria": {
+        "seniorBonus": 50,
+        "lowIncomeBonus": 25
+      }
+    },
+    {
+      "id": "scheme-004",
+      "name": "Disability Support Fund",
+      "description": "Comprehensive support and financial assistance for persons with disabilities.",
+      "category": "Welfare",
+      "deadline": "2026-07-15",
+      "maxAmount": 30000,
+      "minIncome": 0,
+      "maxIncome": 80000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["Disability", "General"],
+      "applicableOccupations": ["*"],
+      "requirements": [
+        "Disability certification",
+        "Medical reports",
+        "Income documentation",
+        "Bank account details"
+      ],
+      "matchCriteria": {
+        "disabilityBonus": 60,
+        "lowIncomeBonus": 30
+      }
+    },
+    {
+      "id": "scheme-005",
+      "name": "Healthcare Worker Incentive",
+      "description": "Special incentive and financial support for healthcare professionals.",
+      "category": "Professional",
+      "deadline": "2026-08-01",
+      "maxAmount": 20000,
+      "minIncome": 30000,
+      "maxIncome": 120000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General", "Veteran"],
+      "applicableOccupations": ["Healthcare worker", "Public servant"],
+      "requirements": [
+        "Employment verification",
+        "Professional license",
+        "Salary statement",
+        "Tax documents"
+      ],
+      "matchCriteria": {
+        "occupationBonus": 45
+      }
+    },
+    {
+      "id": "scheme-006",
+      "name": "Veteran Benefits Package",
+      "description": "Comprehensive financial and healthcare benefits for military veterans.",
+      "category": "Veteran",
+      "deadline": "2026-05-30",
+      "maxAmount": 40000,
+      "minIncome": 0,
+      "maxIncome": 100000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["Veteran", "General"],
+      "applicableOccupations": ["*"],
+      "requirements": [
+        "DD Form 214 (Discharge papers)",
+        "Military ID",
+        "Income documentation",
+        "Medical history (if applicable)"
+      ],
+      "matchCriteria": {
+        "veteranBonus": 70,
+        "lowIncomeBonus": 20
+      }
+    },
+    {
+      "id": "scheme-007",
+      "name": "Education and Skill Development",
+      "description": "Grants and support for vocational training and skill development programs.",
+      "category": "Education",
+      "deadline": "2026-08-15",
+      "maxAmount": 12000,
+      "minIncome": 15000,
+      "maxIncome": 70000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General", "Senior", "Disability"],
+      "applicableOccupations": ["Student", "Unemployed", "*"],
+      "requirements": [
+        "Educational institution enrollment letter",
+        "Course details",
+        "Income proof",
+        "Academic transcript"
+      ],
+      "matchCriteria": {
+        "occupationBonus": 25,
+        "lowIncomeBonus": 35
+      }
+    },
+    {
+      "id": "scheme-008",
+      "name": "Unemployment Relief Program",
+      "description": "Financial assistance and job training for unemployed individuals.",
+      "category": "Employment",
+      "deadline": "2026-07-20",
+      "maxAmount": 8000,
+      "minIncome": 0,
+      "maxIncome": 35000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General"],
+      "applicableOccupations": ["Unemployed"],
+      "requirements": [
+        "Unemployment benefit letter",
+        "Job search documentation",
+        "Previous employment records",
+        "Skills assessment"
+      ],
+      "matchCriteria": {
+        "occupationBonus": 60,
+        "lowIncomeBonus": 40
+      }
+    },
+    {
+      "id": "scheme-009",
+      "name": "Family Services Grant",
+      "description": "Support for families with children and dependent care services.",
+      "category": "Family",
+      "deadline": "2026-08-10",
+      "maxAmount": 18000,
+      "minIncome": 0,
+      "maxIncome": 65000,
+      "applicableStates": ["California", "Texas", "New York", "Florida", "Illinois"],
+      "applicableCategories": ["General", "Senior"],
+      "applicableOccupations": ["*"],
+      "requirements": [
+        "Birth certificates of dependent children",
+        "Income documentation",
+        "Proof of residency",
+        "Child support agreements (if applicable)"
+      ],
+      "matchCriteria": {
+        "lowIncomeBonus": 40
+      }
+    },
+    {
+      "id": "scheme-010",
+      "name": "Rural Development Initiative",
+      "description": "Infrastructure and economic development support for rural communities.",
+      "category": "Development",
+      "deadline": "2026-09-01",
+      "maxAmount": 100000,
+      "minIncome": 25000,
+      "maxIncome": 200000,
+      "applicableStates": ["Texas", "Illinois"],
+      "applicableCategories": ["General"],
+      "applicableOccupations": ["Small business owner", "Farmer", "*"],
+      "requirements": [
+        "Business registration",
+        "Project proposal",
+        "Financial projections",
+        "Environmental assessment"
+      ],
+      "matchCriteria": {
+        "occupationBonus": 35
+      }
+    }
+  ]
+}
