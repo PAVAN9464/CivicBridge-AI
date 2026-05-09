@@ -13,7 +13,7 @@ export interface OllamaGenerateResponse {
 }
 
 const OLLAMA_API_URL = process.env.OLLAMA_API_URL || 'http://localhost:11434/api/generate';
-const MODEL_NAME = 'phi3';
+const MODEL_NAME = 'phi3:3.8b';
 
 /**
  * Connects to a local Ollama API to generate a simplified explanation

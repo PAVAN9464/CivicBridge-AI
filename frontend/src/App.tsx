@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import AIChat from './components/AIChat';
 import Chatbot from './components/Chatbot';
 import Dashboard from './components/Dashboard';
 import EligibilityChecker from './components/EligibilityChecker';
@@ -6,6 +8,15 @@ import Navbar from './components/Navbar';
 import ReminderManager from './components/ReminderManager';
 
 function App() {
+  useEffect(() => {
+    // Scroll to top when the app loads
+    window.scrollTo(0, 0);
+    // Remove any hash from URL to prevent automatic scrolling
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-civic-navy text-slate-100">
       <Navbar />
@@ -39,6 +50,19 @@ function App() {
                 <h3 className="mt-4 text-xl font-semibold text-white">Policy-aware decision support</h3>
                 <p className="mt-3 text-slate-400">Embed regulations, privacy requirements, and audit trails into every workflow for safe, accountable delivery.</p>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="ai-chat" className="border-t border-white/10 bg-slate-950/80 px-6 py-24 sm:px-8 lg:px-12">
+          <div className="mx-auto max-w-7xl">
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-civic-gold">AI Assistant</p>
+              <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">Discover Government Schemes</h2>
+              <p className="mt-3 text-slate-400 max-w-2xl mx-auto">Get personalized guidance on government programs, eligibility requirements, and application processes.</p>
+            </div>
+            <div className="flex justify-center">
+              <AIChat />
             </div>
           </div>
         </section>

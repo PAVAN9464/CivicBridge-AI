@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import chatRoutes from './chat.js';
 import healthRoutes from './health.js';
 import schemeRoutes from './schemes.js';
 import reminderRoutes from './reminders.js';
@@ -7,6 +8,7 @@ import jobEligibilityRoutes from './jobEligibility.js';
 
 const router = Router();
 
+router.use('/chat', chatRoutes);
 router.use('/health', healthRoutes);
 router.use('/schemes', schemeRoutes);
 router.use('/reminders', reminderRoutes);

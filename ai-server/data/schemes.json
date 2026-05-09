@@ -1,0 +1,86 @@
+[
+  {
+    "schemeName": "Mid-Day Meal Scheme",
+    "eligibility": "Children studying in government and government-aided schools from Class I to VIII",
+    "category": "Education",
+    "benefits": "Free nutritious meals to improve nutritional status and encourage school attendance",
+    "applicationLink": "https://mdm.nic.in/"
+  },
+  {
+    "schemeName": "Pradhan Mantri Awas Yojana (PMAY)",
+    "eligibility": "Economically weaker sections, low-income groups, and middle-income groups with annual income up to ₹18 lakhs",
+    "category": "Housing",
+    "benefits": "Subsidy for purchasing or constructing houses, interest subsidy on home loans",
+    "applicationLink": "https://pmaymis.gov.in/"
+  },
+  {
+    "schemeName": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PMJAY)",
+    "eligibility": "Families identified as poor and vulnerable based on SECC database",
+    "category": "Health",
+    "benefits": "Cashless treatment up to ₹5 lakhs per family per year for secondary and tertiary care hospitalization",
+    "applicationLink": "https://pmjay.gov.in/"
+  },
+  {
+    "schemeName": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "eligibility": "Small and marginal farmers with landholding up to 2 hectares",
+    "category": "Agriculture",
+    "benefits": "Direct income support of ₹6,000 per year in three equal installments",
+    "applicationLink": "https://pmkisan.gov.in/"
+  },
+  {
+    "schemeName": "Swachh Bharat Mission (SBM)",
+    "eligibility": "All rural and urban local bodies, individuals can participate in cleanliness drives",
+    "category": "Sanitation",
+    "benefits": "Construction of individual household latrines, community toilets, and solid waste management",
+    "applicationLink": "https://swachhbharatmission.gov.in/"
+  },
+  {
+    "schemeName": "Beti Bachao Beti Padhao (BBBP)",
+    "eligibility": "All districts with low child sex ratio, families with girl children",
+    "category": "Women and Child Development",
+    "benefits": "Cash incentives for girl child education, awareness campaigns, improved sex ratio",
+    "applicationLink": "https://wcd.nic.in/bbbp"
+  },
+  {
+    "schemeName": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "eligibility": "Small business owners, entrepreneurs, self-employed individuals",
+    "category": "Employment",
+    "benefits": "Loans up to ₹10 lakhs for non-farm income generating activities",
+    "applicationLink": "https://www.mudra.org.in/"
+  },
+  {
+    "schemeName": "Atal Pension Yojana (APY)",
+    "eligibility": "Citizens aged 18-40 years, bank account holders",
+    "category": "Pension",
+    "benefits": "Guaranteed minimum pension of ₹1,000 to ₹5,000 per month after 60 years",
+    "applicationLink": "https://www.npscra.nsdl.co.in/APY.php"
+  },
+  {
+    "schemeName": "Digital India Programme",
+    "eligibility": "All citizens, government departments, businesses",
+    "category": "Digital Infrastructure",
+    "benefits": "Broadband connectivity, digital literacy, e-governance services",
+    "applicationLink": "https://digitalindia.gov.in/"
+  },
+  {
+    "schemeName": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "eligibility": "Pregnant women and lactating mothers, first living child, age 19 or above",
+    "category": "Maternity",
+    "benefits": "Cash incentive of ₹5,000 in three installments for maternity benefit",
+    "applicationLink": "https://pmmvy.nic.in/"
+  },
+  {
+    "schemeName": "Skill India Mission",
+    "eligibility": "Youth aged 15-35 years, school/college dropouts, unemployed",
+    "category": "Skill Development",
+    "benefits": "Free skill training, certification, placement assistance",
+    "applicationLink": "https://www.skillindia.gov.in/"
+  },
+  {
+    "schemeName": "Ujjwala Yojana",
+    "eligibility": "Women from below poverty line households",
+    "category": "Energy",
+    "benefits": "Free LPG connections to 8 crore BPL households",
+    "applicationLink": "https://www.pmuy.gov.in/"
+  }
+]

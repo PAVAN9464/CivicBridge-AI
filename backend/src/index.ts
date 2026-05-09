@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
     version: API_VERSION,
     description: 'Government services platform with AI-powered workflows',
     endpoints: {
+      chat: `/api/${API_VERSION}/chat`,
       health: `/api/${API_VERSION}/health`,
       schemes: `/api/${API_VERSION}/schemes`,
       reminders: `/api/${API_VERSION}/reminders`,
